@@ -2,8 +2,8 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 puts "Creating Houses..."
-House.create(location: "Roysambu",bedrooms: 2, price: 22000, description:"safety and security,packing space,outdoor space and low noise")
-House.create(location: "fig tree",bedrooms: 1, price: 15000, description:"safety and security,packing space,outdoor space, updated kitchen and low noise")
+House.create(location: "Roysambu",bedrooms: 2, price: 22000, landload_id:1, description:"safety and security,packing space,outdoor space and low noise")
+House.create(location: "fig tree",bedrooms: 1, price: 15000, landload_id:1, description:"safety and security,packing space,outdoor space, updated kitchen and low noise")
 
 puts "Creating Reviews..."
 Review.create(name: "daisy", comment: "the house was amaizing", house_id: 1)
