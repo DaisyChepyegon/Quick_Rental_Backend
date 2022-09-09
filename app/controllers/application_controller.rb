@@ -67,4 +67,14 @@ class ApplicationController < Sinatra::Base
     house.to_json
   end
 
+  patch '/reviews/:id' do
+    review = Review.find(params[:id])
+    review.update(
+      house_id: params[:house_id],
+      name: params[:name],
+      comment: params[:comment]
+    )
+    review.to_json
+  end
+
 end
